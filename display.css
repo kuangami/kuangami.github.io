@@ -1,0 +1,94 @@
+@charset:'utf-8';
+*{font-family:"PingFang SC","Microsoft YaHei", "微软雅黑", "SimSun", "宋体", Arial, "STHeiti", "华文黑体",  Helvetica, Tahoma, Arial sans-serif, FontAwesome !important;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color:transparent;outline:none;}
+body,header,div,section,nav,article,iframe,textarea,blockquote,figure,figcaption,fieldset,footer,h1,h2,h3,h4,h5,p,span,dl,dt,dd,ul,ol,li,i,form,button,label,input,select,textarea,option,a,em,i,strong,aside,img,table,tr,td,tbody{padding: 0;margin: 0;list-style: none;border:none;-webkit-appearance: none;-moz-appearance: none;word-wrap: break-word; box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing:border-box;outline:none; }
+h1,h2,h3,h4,h5,h6{-webkit-font-smoothing:antialiased;}
+i{font-style:normal;}
+a{text-decoration: none;color:#000;}
+a,button,input:focus, textarea:focus{outline:none;-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;}
+a:hover{color:#2ABACA;}
+
+html{width: 100%; height: 100%;}
+body{float: left; width: 100%;overflow-x: hidden; margin:0 auto; font-size:14px;color:#000;background-color: #FAFAFA;font-family:'PingFang SC',"Open Sans","Helvetica Neue",Helvetica, Arial, sans-serif,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Heiti SC",FontAwesome;}
+
+.left{float: left;}
+.right{float: right;}
+.p_link{color:#444;box-shadow: 0 -6px 0 #B4E7F8 inset;display: inline;color:#000;}
+.center{position:absolute;left:50%;top:50%; transform:translate(-50%,-50%);-webkit-transform:translate(-50%,-50%);}
+.center_hor{position: relative;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);}
+.clearfix:after{content:""; display:block;clear:both;}
+.clearfix{zoom:1;}
+.hidden{display: none;}
+
+.user_img{position: relative;float: left;}
+.user_card_togg{cursor: pointer;}
+.user_box_card{position: absolute;top:30px; padding: 20px; width: 400px;background-color: #fff;border: 1px solid rgba(0,0,0,0.05);box-shadow:0px 0px 20px 0px rgba(0,0,0,0.12), 0px 0 40px 0px rgba(0,0,0,0.15);border-radius: 4px;z-index: 10000;color:#000;}
+
+.ubc_arrow{position: absolute;top:-40px;left:15px;width:30px;height:40px;background:rgba(255,255,255,0);}
+.ubc_arrow:after{content:'';position: absolute; border:10px solid; border-color:transparent transparent #fff transparent;bottom:0;left:5px;}
+.ubc_arrow:before{content:"";position: absolute;bottom:0;left:-15px;width:300px;height:15px;background:rgba(255,255,255,0);}
+
+.user_box_card .card_main_info{position: relative;margin-bottom: 15px;}
+.user_box_card .card_user_img{float: left;width: 50px;height: 50px;margin-right:10px;position:relative;}
+.user_box_card .card_user_img img{width: 100%;height:100%; border-radius: 50%;margin-right: 10px;}
+.user_box_card .card_user_info{ float: left; width: calc(100% - 145px);width: -webkit-calc(100% - 145px);position: relative;}
+.user_box_card .card_user_info:before{content: '';position: absolute;right: 0;top:10px;  height: 30px; border-right:1px solid rgba(0,0,0,0.05);}
+
+.user_box_card .card_main_info .card_user_info .user_name{float: left;width: 100%; font-size:18px;color:#000; line-height:24px;min-height:24px;font-weight: bold;position: relative;}
+.user_box_card .card_main_info .card_user_info .user_sex{position: absolute;top: 6px; margin-left: 10px;width: 10px;height: 10px;background-position: 10px 10px;}
+.user_box_card .card_main_info .card_user_info .user_sex.man{background-position: -472px -126px;}
+.user_box_card .card_main_info .card_user_info .user_sex.woman{background-position: -494px -126px;}
+.user_box_card .card_main_info .card_user_img .user_level{float: left; font-size:8px;min-width:20px;text-align:center; margin:0; color:#AAB2BD;border:1px solid #AAB2BD;border-radius:3px;line-height: 14px;padding:0 5px;background-color: #fff;position: absolute;left:auto;right:-5px;bottom:5px;}
+
+.touxian{float: left;width: 100%;height: 40px;line-height: 40px;}
+.touxian span{font-size: 16px; color:#967ADC;font-family: "Songti SC","Hiragino Sans GB","Microsoft YaHei";}
+.touxian.nothing:before{color:#A5AAB8;font-size:12px;}
+.medal{line-height: 22px;margin-left:6px;}
+.medal span{padding:0 3px 0 6px;position: relative;color:#636B80;}
+.medal span:before{content:'';width: 4px; height: 4px;border-radius:50%; position: absolute;left: 0;top:6px;}
+.medal span.white_gold_medal:before{background-color:#AAD7FF;}
+.medal span.gold_medal:before{background-color:#FFE100;}
+.medal span.yin_medal:before{background-color:#ADB5B8;}
+.medal span.tong_medal:before{background-color:#952A4B;}
+
+.user_box_card .card_main_info .touxian{width:100%;line-height:20px;height:auto;min-height:20px;font-size:16px;margin-top:3px;}
+.user_box_card .card_main_info .touxian span{color:#AAB2BD;}
+.user_box_card .card_main_info .medal{margin-top:10px;}
+.user_box_card .guanzhu_box{right:0;bottom:auto;top: 10px;}
+.user_box_card .game_num{position:absolute;top:5px;right:10px;font-size: 12px;line-height: 18px; color:#BEBEBE;text-align: center;}
+.user_box_card .game_num i{display: block;color:#717580;font-size: 18px;margin-bottom:6px;}
+
+
+.recent_play{float: left;width: 100%; padding:0 0px;position:relative;}
+.recent_play_list{float: left;width: 100%; position: relative;overflow: hidden;padding:15px 10px 25px;}
+.recent_play .vg_arr{display: block; background:transparent;width: 16px; height:16px;margin-top:17px;}
+.recent_play .left_arr{left:10px;}
+.recent_play .right_arr{right:3px;}
+.recent_play .vg_arr i{display: inline-block; width: 9px;height: 9px;border-bottom: 2px solid #CCD1D9;border-left: 2px solid #CCD1D9; right:4px;}
+.recent_play .left_arr i{transform:translateY(-50%) rotate(45deg);-webkit-transform:translateY(-50%) rotate(45deg);}
+.recent_play .right_arr i{transform:translateY(-50%) rotate(-135deg);-webkit-transform:translateY(-50%) rotate(-135deg);}
+
+.user_box_card .recent_play .left_arr{left:0;}
+.user_box_card .recent_play .right_arr{right:0;margin-top:12px;}
+.user_box_card .recent_play .recent_play_list{margin-left:-6px;}
+
+.recent_play p{font-size: 12px;line-height: 18px; color:#A5AAB8;margin-bottom:10px;}
+.recent_play ul{float:left;position:relative;left:0;}
+.recent_play ul li{float: left; width: 60px !important;height: 60px !important;padding: 0; border-radius: 2px;overflow: hidden;margin:0 10px 0 0;}
+.recent_play ul li:hover{transition:all 0.2s;-webkit-transition:all 0.2s;transform:scale(1.06);-webkit-transform:scale(1.06); box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.12), 0px 6px 16px 0px rgba(0,0,0,0.15);border-radius: 2px;}
+.recent_play ul li img{width: 100%;height: auto; border-radius:0;}
+
+.user_box_card .game_state_show{float:left;width: 100%; display: block;margin-bottom:20px;}
+.user_box_card .game_state_show span{float: left; padding: 0 10px; font-size: 14px;line-height: 30px; width: calc(100% / 4);width: -webkit-calc(100% / 4);border-right:1px solid rgba(0,0,0,0.05);}
+.user_box_card .game_state_show span:last-child{border:none;}
+.user_box_card .game_state_show span i{margin: 0; color:#A5AAB8;font-size: 18px;float: right;}
+
+.rel_acc_box{float: left;width: 100%;}
+.rel_acc_box .rel_acc{float: left;width: 100%;margin-bottom:10px;position: relative;}
+.rel_acc_box .rel_acc h3{float: left; font-size: 16px;line-height:22px;}
+.rel_acc_box .rel_acc .rel_acc_level{float: left;font-size:8px;line-height: 22px;border-radius:3px;color:#fff;padding:0 5px;margin-left:10px;}
+.rel_acc_box .psn_acc .rel_acc_level{background-color: #4A90E2;}
+.rel_acc_box .xbl_acc .rel_acc_level{background-color: #16C98D;}
+.rel_acc_box .steam_acc .rel_acc_level{background-color: #615B69;}
+.rel_acc_box .rel_acc_name,.rel_acc_box .rel_acc_medal{float:left;width: 100%;font-size: 12px;color:#717580;line-height: 30px;margin:0;}
+.rel_acc_box .rel_acc_game_num{position:absolute;right:0;font-size: 12px;line-height: 18px; color:#BEBEBE;text-align: center;}
+.rel_acc_box .rel_acc_game_num i{display: block;color:#717580;font-size: 18px;margin-bottom:6px;}
