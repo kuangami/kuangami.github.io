@@ -21,7 +21,7 @@ body{float: left; width: 100%;overflow-x: hidden; margin:0 auto; font-size:14px;
 
 .user_img{position: relative;float: left;}
 .user_card_togg{cursor: pointer;}
-.user_box_card{position: absolute;top:30px; padding: 20px; width: 400px;background-color: #fff;border: 1px solid rgba(0,0,0,0.05);box-shadow:0px 0px 20px 0px rgba(0,0,0,0.12), 0px 0 40px 0px rgba(0,0,0,0.15);border-radius: 4px;z-index: 10000;color:#000;}
+.user_box_card{top:30px; padding: 20px; width: 400px;height: 280px;background-color: #fff;border: 1px solid rgba(0,0,0,0.05);box-shadow:0px 0px 20px 0px rgba(0,0,0,0.12), 0px 0 40px 0px rgba(0,0,0,0.15);border-radius: 4px;z-index: 10000;color:#000;}
 
 .ubc_arrow{position: absolute;top:-40px;left:15px;width:30px;height:40px;background:rgba(255,255,255,0);}
 .ubc_arrow:after{content:'';position: absolute; border:10px solid; border-color:transparent transparent #fff transparent;bottom:0;left:5px;}
@@ -69,7 +69,7 @@ body{float: left; width: 100%;overflow-x: hidden; margin:0 auto; font-size:14px;
 
 .user_box_card .recent_play .left_arr{left:0;}
 .user_box_card .recent_play .right_arr{right:0;margin-top:12px;}
-.user_box_card .recent_play .recent_play_list{margin-left:-6px;}
+.user_box_card .recent_play .recent_play_list{margin-left:0;}
 
 .recent_play p{font-size: 12px;line-height: 18px; color:#A5AAB8;margin-bottom:10px;}
 .recent_play ul{float:left;position:relative;left:0;}
@@ -81,14 +81,3 @@ body{float: left; width: 100%;overflow-x: hidden; margin:0 auto; font-size:14px;
 .user_box_card .game_state_show span{float: left; padding: 0 10px; font-size: 14px;line-height: 30px; width: calc(100% / 4);width: -webkit-calc(100% / 4);border-right:1px solid rgba(0,0,0,0.05);}
 .user_box_card .game_state_show span:last-child{border:none;}
 .user_box_card .game_state_show span i{margin: 0; color:#A5AAB8;font-size: 18px;float: right;}
-
-.rel_acc_box{float: left;width: 100%;}
-.rel_acc_box .rel_acc{float: left;width: 100%;margin-bottom:10px;position: relative;}
-.rel_acc_box .rel_acc h3{float: left; font-size: 16px;line-height:22px;}
-.rel_acc_box .rel_acc .rel_acc_level{float: left;font-size:8px;line-height: 22px;border-radius:3px;color:#fff;padding:0 5px;margin-left:10px;}
-.rel_acc_box .psn_acc .rel_acc_level{background-color: #4A90E2;}
-.rel_acc_box .xbl_acc .rel_acc_level{background-color: #16C98D;}
-.rel_acc_box .steam_acc .rel_acc_level{background-color: #615B69;}
-.rel_acc_box .rel_acc_name,.rel_acc_box .rel_acc_medal{float:left;width: 100%;font-size: 12px;color:#717580;line-height: 30px;margin:0;}
-.rel_acc_box .rel_acc_game_num{position:absolute;right:0;font-size: 12px;line-height: 18px; color:#BEBEBE;text-align: center;}
-.rel_acc_box .rel_acc_game_num i{display: block;color:#717580;font-size: 18px;margin-bottom:6px;}
