@@ -1,0 +1,10 @@
+---
+title: First PC
+subtitle: Jan 2001 - Aug 2003
+layout: default
+date: 2001-01-01
+img: first-pc.png
+category: My Game Eras
+description: Life-changing event. Gaming transited from a party activity to a individual home assignment. School time then became the most lively conference for gaming discussion.
+
+---

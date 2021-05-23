@@ -1,0 +1,10 @@
+---
+title: Free Form
+subtitle: Jun 2008 - Jul 2012
+layout: default
+date: 2008-06-01
+img: free-form.png
+category: My Game Eras
+description: University was the place where I embraced the full freedom. I could dive into every line and every ending of a game I like. It seemed that I possessed endless time. Everything was so slow as if it can last through eternity.
+
+---
