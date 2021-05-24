@@ -334,11 +334,10 @@ section h3.section-subheading {
 .recent-one {
     text-align: center;
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .recent-one .icon {
-    margin-bottom: 20px;
     display: block;
 }
 
