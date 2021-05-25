@@ -1,13 +1,13 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Trigger GitHub Pages Rebuild
+name: Connect and get data from Airtable
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on schedule
   schedule:
     - cron: '0 8 * * 5'
-    
+
   # allow manually trigger
   workflow_dispatch:
 
@@ -22,8 +22,8 @@ jobs:
     steps:
       # Runs a set of commands using the runners shell
       - name: Checkout repository
-        uses: actions/checkout@master
-          
+        uses: actions/checkout@v2
+
       - name: Get data from Airtable
         run: |
           curl \
@@ -35,15 +35,9 @@ jobs:
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
 
-      - name: Archive game stats data
-        uses: actions/upload-artifact@master
-        with:
-          name: game-stats-data
-          path: _data
-          retention-days: 7
-          
-      - name: Request a GitHub Pages build
+      - name: Commit and Push
         run: |
-          curl --request POST \
-          --url "https://api.github.com/repos/${{ github.repository }}/pages/builds" \
-          --header "Authorization: Bearer ${{ secrets.ACCESS_TOKEN }}"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git commit -m "GitHub Actions commit"
+          git push origin master
