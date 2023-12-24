@@ -27,10 +27,10 @@ jobs:
       - name: Get data from Airtable
         run: |
           curl \
-          --url "https://api.airtable.com/v0/appRiBvAoPrXT8hYt/Kuang%20Stats?fields%5B%5D=Games+Played&fields%5B%5D=Playing&fields%5B%5D=Completed&fields%5B%5D=Perfect&maxRecords=1" \
+          --url "https://api.airtable.com/v0/appMORBGAzaLbwDWp/Kuang%20Stats?fields%5B%5D=Games+Played&fields%5B%5D=Playing&fields%5B%5D=Completed&fields%5B%5D=Perfect&maxRecords=1" \
           --header "Authorization: Bearer $AIRTABLE_API_KEY" --output "_data/gamestats.json"
           curl \
-          --url "https://api.airtable.com/v0/appRiBvAoPrXT8hYt/Kuang?fields%5B%5D=%E6%B8%B8%E6%88%8F%E5%90%8D&fields%5B%5D=%E5%88%9D%E6%AC%A1%E6%B8%B8%E7%8E%A9&fields%5B%5D=%E7%8A%B6%E6%80%81&fields%5B%5D=%E8%AF%84%E5%88%86&fields%5B%5D=%E5%B0%81%E9%9D%A2&maxRecords=3&view=Website+Display" \
+          --url "https://api.airtable.com/v0/appMORBGAzaLbwDWp/Kuang?fields%5B%5D=%E6%B8%B8%E6%88%8F%E5%90%8D&fields%5B%5D=%E5%88%9D%E6%AC%A1%E6%B8%B8%E7%8E%A9&fields%5B%5D=%E7%8A%B6%E6%80%81&fields%5B%5D=%E8%AF%84%E5%88%86&fields%5B%5D=%E5%B0%81%E9%9D%A2&maxRecords=3&view=Website+Display" \
           --header "Authorization: Bearer $AIRTABLE_API_KEY" --output "_data/recentplay.json"
         env:
           AIRTABLE_API_KEY: ${{ secrets.AIRTABLE_API_KEY }}
