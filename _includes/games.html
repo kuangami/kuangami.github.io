@@ -12,9 +12,9 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 count-one">
                     <span class="icon"><i class="fa fa-gamepad"> </i></span>
-                    <h3 class="count-value">{{ stats.["Games Played"] }}</h3>
+                    <h3 class="count-value">{{ stats.["Total Games"] }}</h3>
                     <hr class="width25-divider">
-                    <p class="count-title">Games Played</p>
+                    <p class="count-title">Total Games</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 count-one">
@@ -49,7 +49,7 @@
             <div class="row">
                 {% for item in site.data.recentplay.records %}
                     <div class="col-md-4 col-sm-6 recent-one">
-                        <img src="{{ item.fields.["封面"][0].url }}" class="img-responsive img-centered icon" alt="">
+                        <img src="{{ item.fields.["封面"][0].url }}" class="img-responsive img-centered icon" alt="{{ item.fields.["游戏名"] }}" title="{{ item.fields.["游戏名"] }}">
                     </div>
                 {% endfor %}
             </div>
